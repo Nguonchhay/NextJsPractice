@@ -2,6 +2,7 @@ import Link from "next/link";
 import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
 import { BsFillInfoCircleFill } from "react-icons/bs";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 const Header = () : JSX.Element => {
     return (
@@ -12,6 +13,7 @@ const Header = () : JSX.Element => {
             </div>
 
             <div className="">
+                <DarkModeSwitch />
                 <Link href="">
                     <h2 className="text-2xl">
                         <span className="font-bold bg-amber-500 px-2 rounded-lg mr-1">IMDb</span>
