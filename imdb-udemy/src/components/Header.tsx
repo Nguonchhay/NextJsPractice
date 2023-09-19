@@ -12,9 +12,9 @@ const Header = () : JSX.Element => {
                 <MenuItem title="About" link="/about" Icon={BsFillInfoCircleFill} />
             </div>
 
-            <div className="">
+            <div className="flex items-center">
                 <DarkModeSwitch />
-                <Link href="">
+                <Link href="" className="ml-3">
                     <h2 className="text-2xl">
                         <span className="font-bold bg-amber-500 px-2 rounded-lg mr-1">IMDb</span>
                         <span className="text-xl hidden sm:inline">Clone</span>
