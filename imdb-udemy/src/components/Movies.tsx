@@ -5,7 +5,6 @@ interface MovieProps {
 export default function Movies({
     data
 } : MovieProps) {
-    console.log(data);
     return (
         <div>
             {
