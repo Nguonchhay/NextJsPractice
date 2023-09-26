@@ -4,6 +4,7 @@ import type { Metadata } from 'next'
 import Providers from './Providers'
 import Header from '@/components/Header'
 import NavBar from '@/components/NavBar'
+import SearchBox from '@/components/SearchBox'
 
 export const metadata: Metadata = {
   title: 'IMDb Udemy',
@@ -21,7 +22,7 @@ export default function RootLayout({
         <Providers>
           <Header />
           <NavBar />
-          
+          <SearchBox />
           {children}
         </Providers>
       </body>
