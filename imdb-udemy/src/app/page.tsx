@@ -2,9 +2,7 @@ import Movies from '@/components/Movies';
 
 const API_TOKEN = process.env.API_TOKEN;
 
-export default async function Home({
-  searchParams
-}) {
+export default async function Home({ searchParams}: any) {
 
   const genre = searchParams.genre || 'fetchTrending';
   const headers = { 'Authorization': `Bearer ${API_TOKEN}` };

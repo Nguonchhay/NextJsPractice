@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FiThumbsUp } from 'react-icons/fi';
 
 interface CardProps {
-    movie: Object
+    movie: any
 }
 
 export default function Card({

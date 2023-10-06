@@ -8,7 +8,7 @@ export default function SearchBox() {
     const [search, setSearch] = useState('');
     const router = useRouter();
 
-    const onSubmitHandler = (e) => {
+    const onSubmitHandler = (e: any) => {
         e.preventDefault();
         if (!search) return;
         router.push(`/search?query=${search}`);

@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const API_TOKEN = process.env.API_TOKEN;
 
-export default async function MoviePage({ params }) {
+export default async function MoviePage({ params } : any) {
 
     const selectedId = params.id;
     const headers = { 'Authorization': `Bearer ${API_TOKEN}` };
