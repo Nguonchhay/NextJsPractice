@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { fetchTickets } from "../services/TicketService";
 
 export default async function Tickets() {
@@ -14,11 +15,13 @@ export default async function Tickets() {
         <>
           {tickets.map((ticket: any) => (
             <div key={ticket.id} className="card my-5">
-              <h3>{ticket.title}</h3>
-              <p>{ticket.body.slice(0, 200)}...</p>
-              <div className={`pill ${ticket.priority}`}>
-                {ticket.priority} priority
-              </div>
+              <Link href={`/tickets/${ticket.id}`}>
+                <h3>{ticket.title}</h3>
+                <p>{ticket.body.slice(0, 200)}...</p>
+                <div className={`pill ${ticket.priority}`}>
+                  {ticket.priority} priority
+                </div>
+              </Link>
             </div>
           ))}
           {tickets.length === 0 && (
